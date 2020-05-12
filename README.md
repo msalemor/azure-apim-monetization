@@ -23,6 +23,12 @@ This is a code issued to a developer that will allow API Managment to no only gr
 - Consumption: charge for a total number of call per a given period. For example, charge $.01 for eavery call.
 - Combination: charge for a total number of calls per period and then charge per call. For example, charge $100 for 1000 calls and $.01 for any call after that amount.
 
+### APIs
+
+In the API settings, the API should require a subscription key. The usual settings are:
+
+- ```Ocp-Apim-Subscription-Key:<--deveoper subscription key-->```
+
 ### Products
 
 In Azure API Management, product is defined as a collection of APIs. Products have Access Groups defined as administrators, developers and guests. Users are assigned to Access Groups. Those users who are assigned to Access Groups will have access to those products that have the Access Group defined. Products need to be published.
@@ -119,7 +125,7 @@ Result:
 ```
 ## Putting the concepts together
 
-- Create your products and assign it the groups.
+- Create your products and assign it the access groups (usually administrators and developers).
 - Create users and assign them to products.
   - Create subscriptions tied to products and get the subscription key for the user
 - Call the APIs in the products using the subscription key assigned to the users
