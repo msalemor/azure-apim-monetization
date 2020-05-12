@@ -125,13 +125,14 @@ Result:
 ```
 ## Putting the concepts together
 
-- Create your products and assign it the access groups (usually administrators and developers).
+- Create your products and assign them the access groups (usually administrators and developers).
+  - The APIs in the producs should require subscription keys.
 - Create users and assign them to products.
-  - Create subscriptions tied to products and get the subscription key for the user
-- Call the APIs in the products using the subscription key assigned to the users
-- Use the API Management REST APIs to get a report of APIs executed by subscription
-- Apply the billing rules to the succesful calls to produce an invoice
-  - For example, if the product based on a metered method, get the number of succesful calls and multiply them by amount per call
+  - Create subscriptions tied to products and get the subscription key for the user.
+- Call the APIs in the products using the subscription key assigned to the users.
+- Use the API Management REST APIs to get a report of APIs executed by subscription.
+- Apply the billing rules to the succesful calls to produce an invoice.
+  - For example, if the product based on a metered method, get the number of succesful calls and multiply them by amount per call.
 
 ## Questions
 
