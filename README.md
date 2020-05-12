@@ -8,7 +8,7 @@ One of the advantages of exposing APIs through an API Management solution is the
 
 ## Objective
 
-This document describes how to monetize the APIs using the API Management where you may want to develop your own invoicing system.
+This document describes how to monetize the APIs using the API Management where you may want to develop your own invoicing solution.
 
 ## Important Concepts
 
