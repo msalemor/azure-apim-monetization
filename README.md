@@ -82,7 +82,9 @@ The report APIs allow extraction of statistics by for example API and subscripti
 
 Call:
 
-```https://apim.management.azure-api.net/subscriptions/{subscriptionID}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/reports/bySubscription?$filter=timestamp ge datetime'2020-05-01T00:00:00' and timestamp le datetime'2020-06-01T00:00:00'&api-version=2019-12-01```
+```curl
+https://apim.management.azure-api.net/subscriptions/{subscriptionID}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/reports/bySubscription?$filter=timestamp ge datetime'2020-05-01T00:00:00' and timestamp le datetime'2020-06-01T00:00:00'&api-version=2019-12-01
+```
 
 With the following header key value:
 
