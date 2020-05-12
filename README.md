@@ -80,3 +80,38 @@ The report APIs allow extraction of statistics by for example API and subscripti
 
 ### Calls by subscription
 
+Call:
+
+```https://apim.management.azure-api.net/subscriptions/{subscriptionID}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/reports/bySubscription?$filter=timestamp ge datetime'2020-05-01T00:00:00' and timestamp le datetime'2020-06-01T00:00:00'&api-version=2019-12-01```
+
+With the following header key value:
+
+```Authorization:SAS TOKEN```
+
+Result:
+
+```json
+{
+    "value": [
+        {
+            "name": "",
+            "userId": "/users/1",
+            "productId": "/products/starter",
+            "subscriptionId": "/subscriptions/5eb848bb082b16004d070001",
+            "callCountSuccess": 0,
+            "callCountBlocked": 0,
+            "callCountFailed": 0,
+            "callCountOther": 0,
+            "callCountTotal": 0,
+            "bandwidth": 0,
+            "cacheHitCount": 0,
+            "cacheMissCount": 0,
+            "apiTimeAvg": 0.0,
+            "apiTimeMin": 0.0,
+            "apiTimeMax": 0.0,
+            "serviceTimeAvg": 0.0,
+            "serviceTimeMin": 0.0,
+            "serviceTimeMax": 0.0
+        }]
+}
+```
