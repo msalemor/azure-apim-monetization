@@ -2,7 +2,7 @@
 
 One of the advantages of exposing APIs through an API Management solution is the ability to monetize the API consumption. This is the case for Azure's API Management. There's no built-in solution to monetize, the process is described in the following document utilizing a billing platform such as stripe:
 
-- https://azure.microsoft.com/es-mx/blog/how-to-monetize-apis-with-azure-api-management/
+- https://azure.microsoft.com/en-us/blog/how-to-monetize-apis-with-azure-api-management/
 
 > Note: the article includes sample code that interface with a stripe to issue invoices and process payments. The code offers great ideas as to how to develop your own invoicing solution.
 
