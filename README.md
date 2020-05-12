@@ -115,3 +115,14 @@ Result:
         }]
 }
 ```
+
+## Questions
+
+### Does APIM come with an out of the box invoicing solution.
+
+No. This functionality has to be impleted.
+
+### Does APIM maintain the list of prices
+
+No. This has to be defined outside the application.
+
